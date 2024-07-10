@@ -1,0 +1,151 @@
+:root {
+    --background-color-light: #f0f0f0;
+    --text-color-light: #000;
+    --container-background-color-light: #fff;
+    --button-background-color-light: #007bff;
+    --button-hover-background-color-light: #0056b3;
+    --remove-button-background-color-light: #dc3545;
+    --remove-button-hover-background-color-light: #c82333;
+    
+    --background-color-dark: #121212;
+    --text-color-dark: #fff;
+    --container-background-color-dark: #1e1e1e;
+    --button-background-color-dark: #bb86fc;
+    --button-hover-background-color-dark: #3700b3;
+    --remove-button-background-color-dark: #cf6679;
+    --remove-button-hover-background-color-dark: #b00020;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body.dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.container {
+    background-color: var(--container-background-color-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+body.dark .container {
+    background-color: var(--container-background-color-dark);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#opcoes input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+}
+
+#opcoes button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-background-color-light);
+    color: white;
+    margin: 5px;
+    width: calc(100% - 22px);
+}
+
+#opcoes button:hover {
+    background-color: var(--button-hover-background-color-light);
+}
+
+body.dark #opcoes button {
+    background-color: var(--button-background-color-dark);
+}
+
+body.dark #opcoes button:hover {
+    background-color: var(--button-hover-background-color-dark);
+}
+
+#output {
+    margin-top: 20px;
+    text-align: left;
+    display: none;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+body.dark .task {
+    border-color: #444;
+}
+
+.remove-btn {
+    background-color: var(--remove-button-background-color-light);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: var(--remove-button-hover-background-color-light);
+}
+
+body.dark .remove-btn {
+    background-color: var(--remove-button-background-color-dark);
+}
+
+body.dark .remove-btn:hover {
+    background-color: var(--remove-button-hover-background-color-dark);
+}
+
+#toggle-theme {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-background-color-light);
+    color: white;
+}
+
+#toggle-theme:hover {
+    background-color: var(--button-hover-background-color-light);
+}
+
+body.dark #toggle-theme {
+    background-color: var(--button-background-color-dark);
+}
+
+body.dark #toggle-theme:hover {
+    background-color: var(--button-hover-background-color-dark);
+}
